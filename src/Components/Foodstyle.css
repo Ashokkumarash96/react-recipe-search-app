@@ -1,0 +1,226 @@
+.mainContainer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headingContainer>h1 {
+  font-family: var(--headerFont);
+  color: #D4ADFC;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  padding-top: 1.2rem;
+  margin: 20px;
+}
+
+.headingContainer>h4 {
+  font-family: var(--headerFont);
+  color: #D4ADFC;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  margin: 10px;
+}
+
+.searchInput {
+  font-size: 1.5rem;
+  padding: 2px 20px;
+  margin: 1.5rem;
+  width: 450px;
+  height: 52px;
+  border-radius: 1rem;
+  border: solid 2px blue;
+  outline: #D4ADFC;
+  background-color: rgb(74, 106, 182);
+  color: rgb(4, 26, 78);
+  caret-color: whitesmoke;
+}
+
+.searchInput::placeholder {
+  color: rgb(67, 159, 208);
+  font-size: 1rem;
+}
+
+
+
+.resultContainer {
+  width: 80%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem
+}
+
+
+.foodCard {
+  width: 180px;
+  border-radius: 1rem;
+  background-color: black;
+  padding: 5px;
+}
+
+.foodImg {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.foodCard>h3 {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+
+.alphabetsContainer {
+  display: flex;
+  margin: 3rem 2rem
+}
+
+.alphaBox {
+  width: 60px;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0 10px 10px 0;
+  background-color: rgb(41, 97, 157);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+.alphaBox:hover {
+  cursor: pointer;
+  color: rgb(41, 97, 157);
+  background-color: rgb(255, 255, 255);
+  transition-duration: .8s;
+}
+
+
+.ErrorMsg {
+  width: 100vh;
+  display: flex;
+  margin-left: 8rem;
+  justify-content: center;
+  text-align: center;
+  background-color: wheat;
+  font-size: 3rem;
+  color: rebeccapurple;
+  border-radius: 2rem;
+  border: solid 5px white;
+}
+
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftContent {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.rightContent {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+
+.recipeInfoTitle1 {
+  font-size: 5rem;
+  color: bisque;
+  text-align: center;
+  margin: 30px;
+}
+
+.recipeInfoTitle2 {
+  font-size: 3rem;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.recipeInfoCate {
+  font-size: 2rem;
+  color: seashell;
+  text-align: center;
+}
+
+
+.recipeInfoImg {
+  width: 60%;
+  height: 50%;
+  border-radius: 1rem;
+  margin: 2rem;
+
+}
+
+
+td,
+th {
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+}
+
+table {
+  background-color: rgb(140, 130, 130);
+  column-gap: 2rem;
+  border: 2px solid whitesmoke;
+  color: black;
+}
+
+tr {
+  margin: 0 35px;
+}
+
+th {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+td {
+  padding: 10px;
+  width: 15rem;
+  text-align: left;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.recipeStep {
+  text-align: left;
+  color: white;
+}
+
+hr {
+  background-color: white;
+  width: 13rem;
+  height: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.stepToFollow {
+  text-align: justify;
+  font-size: 1.35rem;
+  color: azure;
+  margin-left: 3rem;
+  width: 30%;
+}
+
+.steps {
+  max-height: 26rem;
+  width: 30rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding: 15px;
+}
