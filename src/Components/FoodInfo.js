@@ -1,12 +1,13 @@
 // import React from "react"
 import React, { useState } from "react";
 // import the useParams hook from react-router-dom
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 // import the Foodstyle.css file for styling
 import "./Foodstyle.css";
 
 // define the FoodInfo component
 const FoodInfo = () => {
+  const navigate = useNavigate();
   // use the useState hook to create a state variable for the food
   const [food, setFood] = useState();
   // use the useParams hook to get the MealId parameter from the route
@@ -27,6 +28,9 @@ const FoodInfo = () => {
   // return the JSX for the FoodInfo component
   return (
     <>
+      <button className='back2HomeBtn' onClick={() => navigate("/")}>
+        Back to Home
+      </button>
       {/* check if food is falsy */}
       {!food ? (
         // if yes, render an empty string
